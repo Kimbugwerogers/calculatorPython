@@ -33,7 +33,7 @@ label = tkinter.Label(frame, text="0", anchor='e', bg=color_black,
 label.grid(row=0, column=0, columnspan=column_count, sticky='ew') #make the label span all columns and align to the right
 
 history_label = tkinter.Label(window, text="",bg=color_orange,  pady=6, font=("Arial", 12), anchor="e")
-history_label.pack(expand=True, fill='both') # or .grid() depending on your layout
+history_label.pack(expand=True, fill='both') 
 
 for row in range(row_count):
     for column in range(column_count):
