@@ -1,5 +1,8 @@
 import tkinter
 
+#Name: Kimbugwe Rogers 
+#Reg no: 25/BSE/BU/R/1002
+
 button_values = [
     ['C', 'CE', '%', '√'],
     ['7', '8', '9', '/'],
@@ -22,9 +25,9 @@ color_white = '#FFFFFF'
 color_orange = '#FFA500'
 
 # Create the main window
-window = tkinter.Tk() #create a window object
+window = tkinter.Tk() 
 window.title("Calculator")
-window.resizable(False, False) #make the window not resizable
+window.resizable(False, False) 
 window.geometry("300x400")
 
 frame = tkinter.Frame(window) #create a frame to hold the buttons
@@ -133,13 +136,13 @@ def button_clicked(value):
 
 
 #center the window on the screen
-window.update() #update the window to get the correct size
-window_width = window.winfo_width() #get the width of the window
-window_height = window.winfo_height() #get the height of the window
-screen_width = window.winfo_screenwidth() #get the width of the screen
-screen_height = window.winfo_screenheight() #get the height of the screen
-x = (screen_width - window_width) // 2 #calculate the x coordinate to center the window
-y = (screen_height - window_height) // 2 #calculate the y coordinate to center
+window.update() 
+window_width = window.winfo_width() 
+window_height = window.winfo_height() 
+screen_width = window.winfo_screenwidth() 
+screen_height = window.winfo_screenheight() 
+x = (screen_width - window_width) // 2 
+y = (screen_height - window_height) // 2 
 #format the geometry string to set the size and position of the window
 window.geometry(f"{window_width}x{window_height}+{x}+{y}") #set the geometry of the window to center it
 
